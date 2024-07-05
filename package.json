@@ -1,5 +1,5 @@
 {
-  "name": "target-maplib-personal-component",
+  "name": "custom-maplib-personal-component",
   "version": "1.0.0",
   "description": "Made with create-react-library",
   "author": "",
@@ -46,13 +46,13 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1",
-    "antd": "^5.19.0"
-
+    "sass": "^1.77.6"
   },
   "files": [
     "dist"
   ],
   "dependencies": {
+    "antd": "^5.19.0",
     "maplibre-gl": "^4.5.0"
   }
 }
