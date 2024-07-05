@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import maplibregl from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
+import { Typography } from 'antd'
+import './Map.scss'
 
 const Map = () => {
   const [map, setMap] = useState(null)
@@ -15,9 +17,17 @@ const Map = () => {
     })
     setMap(mapInstance)
   }, [])
+  const { Title } = Typography
+
   return (
     <div>
-      <div id='map' style={{ width: '100%', height: '500px' }} />
+      <Title className="title">Map</Title>
+      <div className="heading">This is Basic map of maplibre-gl</div>
+      <div
+        className='mapBorder'
+        id='map'
+        style={{ width: '100%', height: '500px' }}
+      />
     </div>
   )
 }
