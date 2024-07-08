@@ -32,9 +32,8 @@ export default {
     }),
     postcss({
       extensions: ['.css', '.scss'],
-      use: [
-        ['sass'],
-      ],
+      extract: true,
+      use: [['sass']]
     }),
     terser()
   ]
